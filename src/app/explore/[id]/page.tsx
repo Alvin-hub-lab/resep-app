@@ -40,9 +40,15 @@ export default function MealDetail() {
         <p style={{ whiteSpace: "pre-wrap" }}>{meal.strInstructions}</p>
       </div>
 
-      <button className="btn btn-secondary" onClick={() => router.push("/explore")}>
-        Kembali
-      </button>
+      <div className="d-flex gap-2">
+        <button className="btn btn-secondary" onClick={() => router.push("/explore")}>
+            Kembali ke Explore
+        </button>
+
+        <button className="btn btn-dark" onClick={() => router.push("/")}>
+            Kembali ke Halaman Utama
+        </button>
+      </div>
     </div>
   );
 }

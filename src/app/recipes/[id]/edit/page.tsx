@@ -71,6 +71,14 @@ export default function EditRecipePage() {
 
         <button className="btn btn-warning">Simpan Perubahan</button>
       </form>
+
+      <button
+        type="button"
+        className="btn btn-secondary mt-3"
+        onClick={() => router.push("/")}
+      >
+        Kembali ke Halaman Utama
+      </button>
     </div>
   );
 }
